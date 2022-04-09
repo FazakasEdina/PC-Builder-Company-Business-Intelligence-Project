@@ -1,0 +1,19 @@
+lepesek: https://www.astera.com/type/blog/data-mart-architecture/
+1. scope
+ Számítógép piac. A cég összeszereli alkatrészekből, nem gyárt saját prototípust.
+ Ilyen cégek adatait gyűjtjük össze különböző adatforrásokból, hogy kimutatásokat végezzünk a használati módok/igények és alkatrészek paraméterei alapján. Pl. milyen konfigurációkat igényelnek a leginkább azok akik ...
+*Tovabbi otletek - laptop szerviz (hasonló eladásokkal kapcsolatos kimutatások)
+2. logical model
+központi entitások:
+ alkatrész, eladások
+lényeges, de nem részletekbe menő (dimenzio):
+ Tipus, Gyártó, Árkategória(alkatrész ára szerint, amennyiért vettük), Idő,
+ Mennyiség (vétel), Vevő, Lakhely/Székhely/HovaMegyAzÁru/Dest., Foglalkozás, 
+ JogiViszony(Alk./Váll.), 
+részletes:
+
+3. adatok
+ majd...
+
+4. sema
+ galaxis - 2 falct table, 1 koztes
