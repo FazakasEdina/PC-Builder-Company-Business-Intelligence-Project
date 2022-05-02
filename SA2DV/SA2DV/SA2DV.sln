@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SA2DV", "SA2DV\SA2DV.dtproj", "{B5C0661B-D80B-47DB-AA6F-AC1A66A82742}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5C0661B-D80B-47DB-AA6F-AC1A66A82742}.Development|Default.ActiveCfg = Development
+		{B5C0661B-D80B-47DB-AA6F-AC1A66A82742}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D432B6E-6798-4DA6-AF2C-C2C83A83D709}
+	EndGlobalSection
+EndGlobal
