@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="AssemblyOracle"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{9053F6A2-C3AC-42E6-B670-2B9BC0235FC5}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{7581E28B-DCD0-4A4D-978E-B469DF1793F4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0G6kkzuaiUuZJWG4hSAd5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD73LMTlmDUOaKyuZQ6BTuYEcIeztgVFCx1He0W+nhkdwAAAAAOgAAAAAIAACAAAAAtZC+9lDLZhaDzS9TNkUTcZUaxIDaq7iqRZWWt5u23nyAAAACmZORayneDIN73nrVpaOfmzl4w1YNhbt642PCSyTOwDUAAAAB6SwZPaEschNnRqbO/RQ7rq573Upi1GqCeDEK70T0ydL1Awpzx/RXjrz/s/NlD0oAf43w92e+3XnBVBcq4hyEv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0G6kkzuaiUuZJWG4hSAd5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACxyKNih6h2jpLZ1c12OnBtziE5r15fkmb9T82PstUHRQAAAAAOgAAAAAIAACAAAADmz/C1GvlU/tzhXS/NVIUaUQvUVnlvGiYevEayGFCWSSAAAACLpE2Z8KGjzskilMqbt7nM6dvNluhjI8fPrh+9wKWbOkAAAACnrN3PkSQ+3zd3xaMiVAz1AiFSAUdabseFGYseochmlkrP2Lnb4wX/L3N+yRZtdkLzAWKeq7Rfq0X1RBB2h5b4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -64,6 +64,44 @@
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;COMPONENTID&quot;"
               DTS:DTSID="{ABFFBDD7-0E0B-4A54-BD8B-F8CE3402DA3F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{14B3DD41-EE13-49E4-B980-1318D2A12B5E}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1038"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\EGYETEM\VI.félév\Business Intelligence\Labor\kozos_repo\PC-Builder-Company-Business-Intelligence-Project\Source2SA\CSV\Pc_and_componentsOracle.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PCID"
+              DTS:DTSID="{CA375163-2E72-480F-B374-B26348992B5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPONENTID"
+              DTS:DTSID="{EE955DC2-91EF-434A-A5FE-A6FC1A3A32F2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -117,19 +155,19 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load table Assembly Oracle\Derived Column.Inputs[Derived Column Input].Columns[ComputerID]"
+                      refId="Package\Load table Assembly Oracle\Derived Column.Inputs[Derived Column Input].Columns[PCID]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="ComputerID"
-                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[ComputerID]" />
+                      cachedName="PCID"
+                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PCID]" />
                     <inputColumn
-                      refId="Package\Load table Assembly Oracle\Derived Column.Inputs[Derived Column Input].Columns[PartID]"
+                      refId="Package\Load table Assembly Oracle\Derived Column.Inputs[Derived Column Input].Columns[COMPONENTID]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="PartID"
-                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PartID]" />
+                      cachedName="COMPONENTID"
+                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTID]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -201,13 +239,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[ComputerID]}</property>
+                          name="Expression">#{Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PCID]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">ComputerID</property>
+                          name="FriendlyExpression">PCID</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -224,13 +262,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PartID]}</property>
+                          name="Expression">#{Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTID]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">PartID</property>
+                          name="FriendlyExpression">COMPONENTID</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -283,8 +321,8 @@
               <connections>
                 <connection
                   refId="Package\Load table Assembly Oracle\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -293,15 +331,15 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[ComputerID]"
+                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PCID]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;PCID&quot;]"
+                      externalMetadataColumnId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PCID]"
                       length="50"
-                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[ComputerID]"
-                      name="ComputerID"
+                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PCID]"
+                      name="PCID"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -315,15 +353,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PartID]"
+                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTID]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;COMPONENTID&quot;]"
+                      externalMetadataColumnId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTID]"
                       length="50"
-                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[PartID]"
-                      name="PartID"
+                      lineageId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTID]"
+                      name="COMPONENTID"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -340,17 +378,17 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;PCID&quot;]"
+                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PCID]"
                       codePage="1250"
                       dataType="str"
                       length="50"
-                      name="&quot;PCID&quot;" />
+                      name="PCID" />
                     <externalMetadataColumn
-                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;COMPONENTID&quot;]"
+                      refId="Package\Load table Assembly Oracle\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTID]"
                       codePage="1250"
                       dataType="str"
                       length="50"
-                      name="&quot;COMPONENTID&quot;" />
+                      name="COMPONENTID" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -625,27 +663,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Load table Assembly Oracle\Flat File Source"
-          TopLeft="131.428573666787,43.5882359054262" />
+          Size="170.4,41.6"
+          Id="Package\Load table Assembly Oracle\OLE DB Destination"
+          TopLeft="118.571430590688,244.705885784849" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Load table Assembly Oracle\Derived Column"
           TopLeft="124.285716402287,139.176472540133" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Load table Assembly Oracle\Flat File Source"
+          TopLeft="131.428573666787,43.5882359054262" />
         <EdgeLayout
           Id="Package\Load table Assembly Oracle.Paths[Flat File Source Output]"
           TopLeft="203.657145034537,85.1882359054262">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.9882366347066"
+              EndConnector="0,53.9882366347068"
               Start="0,0"
-              End="0,46.4882366347066">
+              End="0,46.4882366347068">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.4882366347066" />
+                    End="0,46.4882366347068" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -654,10 +696,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load table Assembly Oracle\OLE DB Destination"
-          TopLeft="118.571430590688,244.705885784849" />
         <EdgeLayout
           Id="Package\Load table Assembly Oracle.Paths[Derived Column Output]"
           TopLeft="202.228573496488,180.776472540133">

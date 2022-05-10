@@ -1,14 +1,14 @@
-"LOCATIONID","COUNTRY","CITY","STREET_ADDRESS"
-14,"Italy","Roma","1297 Via Cola di Rie"
-15,"Italy","Venice","93091 Calle della Testa"
-16,"Australia","Sydney","12-98 Victoria Street"
-17,"Singapore","Singapore","198 Clementi North"
-18,"United Kingdom","London","8204 Arthur St"
-19,"United Kingdom","Oxford","Magdalen Centre, The Oxford Science Park"
-20,"United Kingdom","Stretford","9702 Chester Road"
-21,"Germany","Munich","Schwanthalerstr. 7031"
-22,"Brazil","Sao Paulo","Rua Frei Caneca 1360 "
-23,"Switzerland","Geneva","20 Rue des Corps-Saints"
-24,"Switzerland","Bern","Murtenstrasse 921"
-25,"Netherlands","Utrecht","Pieter Breughelstraat 837"
-26,"Mexico","Mexico City","Mariano Escobedo 9991"
+LOCATIONID,COUNTRY,CITY,STREET_ADDRESS
+1,Italy,Roma,1297 Via Cola di Rie
+2,Italy,Venice,93091 Calle della Testa
+3,Australia,Sydney,12-98 Victoria Street
+4,Singapore,Singapore,198 Clementi North
+5,United Kingdom,London,8204 Arthur St
+6,United Kingdom,Oxford,Magdalen Centre, The Oxford Science Park
+7,United Kingdom,Stretford,9702 Chester Road
+8,Germany,Munich,Schwanthalerstr. 7031
+9,Brazil,Sao Paulo,Rua Frei Caneca 1360 
+10,Switzerland,Geneva,20 Rue des Corps-Saints
+11,Switzerland,Bern,Murtenstrasse 921
+12,Netherlands,Utrecht,Pieter Breughelstraat 837
+13,Mexico,Mexico City,Mariano Escobedo 9991

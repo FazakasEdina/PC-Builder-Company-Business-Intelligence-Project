@@ -1,10 +1,10 @@
-"CATEGORYID","NAME"
-1,"Processors"
-2,"Graphics Cards"
-3,"Motherboards"
-4,"Memory"
-5,"Hard Drives"
-6,"Solid State Drives"
-7,"Power Supplies"
-8,"Cases"
-9,"CPU Coolers"
+CATEGORYID,NAME
+1,Processors
+2,Graphics Cards
+3,Motherboards
+4,Memory
+5,Hard Drives
+6,Solid State Drives
+7,Power Supplies
+8,Cases
+9,CPU Coolers

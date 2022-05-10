@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="PurposeOfSaleOracle"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{0FB23B99-6BB0-4814-9D82-AC48D8F40654}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{81734BBA-30E5-4987-A8DA-36AED30101D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -128,6 +128,44 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5CEF88C5-A11F-41D6-B1F5-8F3AC2BA5E58}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1038"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\EGYETEM\VI.félév\Business Intelligence\Labor\kozos_repo\PC-Builder-Company-Business-Intelligence-Project\Source2SA\CSV\Purpose_of_saleOracle.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USAGEID"
+              DTS:DTSID="{23E7F381-5CD0-461D-9084-6AEF41CBCED1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NAME"
+              DTS:DTSID="{40820359-4F58-4A70-A50A-EDB7C2542B4E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -159,12 +197,12 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[&quot;NAME&quot;]"
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[NAME]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="&quot;NAME&quot;"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;NAME&quot;]" />
+                      cachedName="NAME"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -236,13 +274,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns["NAME"]}</property>
+                          name="Expression">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">["NAME"]</property>
+                          name="FriendlyExpression">NAME</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -295,8 +333,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -305,15 +343,15 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;USAGEID&quot;]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[USAGEID]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;USAGEID&quot;]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USAGEID]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;USAGEID&quot;]"
-                      name="&quot;USAGEID&quot;"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[USAGEID]"
+                      name="USAGEID"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -327,15 +365,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;NAME&quot;]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;NAME&quot;]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;NAME&quot;]"
-                      name="&quot;NAME&quot;"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NAME]"
+                      name="NAME"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -352,17 +390,17 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;USAGEID&quot;]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USAGEID]"
                       codePage="1250"
                       dataType="str"
                       length="50"
-                      name="&quot;USAGEID&quot;" />
+                      name="USAGEID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;NAME&quot;]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NAME]"
                       codePage="1250"
                       dataType="str"
                       length="50"
-                      name="&quot;NAME&quot;" />
+                      name="NAME" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -637,20 +675,24 @@
           Size="152.8,41.6"
           Id="Package\Data Flow Task\Derived Column"
           TopLeft="143.571431016435,201.117649879423" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="172.142860074433,306.647063124139" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="222.58571678546,132.600001276241">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68.517648603182"
+              EndConnector="0,68.5176486031824"
               Start="0,0"
-              End="0,61.017648603182">
+              End="0,61.0176486031824">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.017648603182" />
+                    End="0,61.0176486031824" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -659,36 +701,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="172.142860074433,306.647063124139" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="219.971431016436,242.717649879423">
+          TopLeft="219.971431016435,242.717649879423">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.3714290579971,63.9294132447161"
+              EndConnector="37.371429057998,63.929413244716"
               Start="0,0"
-              End="37.3714290579971,56.4294132447161">
+              End="37.371429057998,56.429413244716">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.9647066223581" />
+                    End="0,27.964706622358" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27.9647066223581"
-                    Point2="0,31.9647066223581"
-                    Point3="4,31.9647066223581" />
+                    Point1="0,27.964706622358"
+                    Point2="0,31.964706622358"
+                    Point3="4,31.964706622358" />
                   <mssgle:LineSegment
-                    End="33.3714290579971,31.9647066223581" />
+                    End="33.371429057998,31.964706622358" />
                   <mssgle:CubicBezierSegment
-                    Point1="33.3714290579971,31.9647066223581"
-                    Point2="37.3714290579971,31.9647066223581"
-                    Point3="37.3714290579971,35.9647066223581" />
+                    Point1="33.371429057998,31.964706622358"
+                    Point2="37.371429057998,31.964706622358"
+                    Point3="37.371429057998,35.964706622358" />
                   <mssgle:LineSegment
-                    End="37.3714290579971,56.4294132447161" />
+                    End="37.371429057998,56.429413244716" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

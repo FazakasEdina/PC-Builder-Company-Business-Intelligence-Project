@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>MSSQL-Oracle2SA</Name>
-    <LastWriteTime>2022-04-12T05:46:57.1448964Z</LastWriteTime>
+    <LastWriteTime>2022-05-10T09:50:32.0925541Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -63,52 +63,52 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>AssemblyOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T08:52:57.5580017Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:38:54.1650401Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CategoriesOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T08:54:01.1788603Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:39:06.0396807Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ComponentsOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T08:58:14.7377685Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:39:17.8121488Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ComputersOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T12:33:51.9923062Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:39:27.5581771Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CustomersOracle.dtsx</Name>
-      <LastWriteTime>2022-04-12T05:46:56.9123273Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:50:28.8389353Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>LocationsOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T09:16:04.0263904Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T08:52:58.1305752Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ManufacturersOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T09:16:27.9125132Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:38:18.3790373Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>PurchasesOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T09:20:30.9044834Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T08:52:03.8173567Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>PurposeOfSaleOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T09:23:37.8064586Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:36:26.4091499Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>SaleOracle.dtsx</Name>
-      <LastWriteTime>2022-04-05T09:27:21.5136927Z</LastWriteTime>
+      <LastWriteTime>2022-05-10T09:22:36.751973Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

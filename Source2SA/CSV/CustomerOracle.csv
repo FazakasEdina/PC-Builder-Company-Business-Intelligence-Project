@@ -1,14 +1,14 @@
-"CUSTOMERID","NAME","EMAIL","TELEPHONE","PERSON_OR_COMPANY","LOCATIONID","CNP_OR_CF","EFFECTIVE_DATE"
-8,"MasterCard","jackeline.finley@mastercard.com","+1 313 123 4240",1,14,"38645357",19-JAN-20
-9,"Oracle","yolando.wilkerson@oracle.com","+1 716 123 4485",1,15,"	27374988",20-JAN-20
-10,"GameStop","yolanda.ball@gamestopcorp.com","+91 80 012 4809",1,16,"	15591983",17-MAY-20
-11,"Emerson Electric","christian.cage@emerson.com","+1 219 123 4142",1,17,"	21571840",21-DEC-19
-12,"Jaxon Ross","jaxon.ross@example.com","650 123 1234",0,18,"2246329173936",29-JUN-20
-13,"Liam Henderson","liam.henderson@example.com","650 123 2234",0,19,"2641588347829",05-MAR-19
-14,"Jackson Coleman","jackson.coleman@example.com","650 123 3234",0,20,"8466221837451",02-MAY-19
-15,"Callum Jenkins","callum.jenkins@example.com","650 123 4234",0,21,"6105872132746",28-AUG-19
-16,"Caleb Diaz","caleb.diaz@example.com","650 121 2019",0,22,"4384231882483",14-MAY-20
-17,"Kian Griffin","kian.griffin@example.com","650 121 2034",0,23,"3216612547168",24-MAY-19
-18,"Sonny Russell","sonny.russell@example.com","650 121 1234",0,24,"2473100163347",07-MAY-19
-19,"Ibrahim Alexander","ibrahim.alexander@example.com","650 127 1634",0,25,"4745437048257",26-NOV-20
-20,"Felix Bryant","felix.bryant@example.com","650 127 1734",0,26,"2260318062984",09-SEP-19
+CUSTOMERID,NAME,EMAIL,TELEPHONE,PERSON_OR_COMPANY,LOCATIONID,CNP_OR_CF,EFFECTIVE_DATE
+14,MasterCard,jackeline.finley@mastercard.com,+1 313 123 4240,1,1,38645357,19/01/20
+15,Oracle,yolando.wilkerson@oracle.com,+1 716 123 4485,1,2, 27374988,20/01/20
+16,GameStop,yolanda.ball@gamestopcorp.com,+91 80 012 4809,1,3, 15591983,17/05/20
+17,Emerson Electric,christian.cage@emerson.com,+1 219 123 4142,1,4, 21571840,21/12/19
+18,Jaxon Ross,jaxon.ross@example.com,650 123 1234,0,5,2246329173936,29/06/20
+19,Liam Henderson,liam.henderson@example.com,650 123 2234,0,6,2641588347829,05/03/19
+20,Jackson Coleman,jackson.coleman@example.com,650 123 3234,0,7,8466221837451,02/05/19
+21,Callum Jenkins,callum.jenkins@example.com,650 123 4234,0,8,6105872132746,28/08/19
+22,Caleb Diaz,caleb.diaz@example.com,650 121 2019,0,9,4384231882483,14/05/20
+23,Kian Griffin,kian.griffin@example.com,650 121 2034,0,10,3216612547168,24/05/19
+24,Sonny Russell,sonny.russell@example.com,650 121 1234,0,11,2473100163347,07/05/19
+25,Ibrahim Alexander,ibrahim.alexander@example.com,650 127 1634,0,12,4745437048257,26/11/20
+26,Felix Bryant,felix.bryant@example.com,650 127 1734,0,13,2260318062984,09/09/19
