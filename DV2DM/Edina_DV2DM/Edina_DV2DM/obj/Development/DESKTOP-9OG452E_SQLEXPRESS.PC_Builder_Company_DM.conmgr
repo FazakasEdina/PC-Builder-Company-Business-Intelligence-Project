@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-9OG452E_SQLEXPRESS.PC_Builder_Company_DM"
+  DTS:DTSID="{217CD9BE-4EC1-48FC-909F-21D3C706368C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-9OG452E\SQLEXPRESS;Initial Catalog=PC_Builder_Company_DM;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Edina_DV2DM-{217CD9BE-4EC1-48FC-909F-21D3C706368C}DESKTOP-9OG452E\SQLEXPRESS.PC_Builder_Company_DM;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

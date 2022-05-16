@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Edina_DV2DM", "Edina_DV2DM\Edina_DV2DM.dtproj", "{D89B468B-ED50-4DE7-83D7-2562D44C900C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89B468B-ED50-4DE7-83D7-2562D44C900C}.Development|Default.ActiveCfg = Development
+		{D89B468B-ED50-4DE7-83D7-2562D44C900C}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D835B383-2598-4E10-87C5-A40B59ABCC55}
+	EndGlobalSection
+EndGlobal
