@@ -6,10 +6,85 @@
     <Name>SSAS.database</Name>
     <FullPath>SSAS.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>PC Builder Company DM.cube</Name>
+      <FullPath>PC Builder Company DM.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>PC Builder Company DM.partitions</Name>
+          <FullPath>PC Builder Company DM.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Computers.dim</Name>
+      <FullPath>Dim Computers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Manufacturers.dim</Name>
+      <FullPath>Dim Manufacturers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Components.dim</Name>
+      <FullPath>Dim Components.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Purpose Of Sale.dim</Name>
+      <FullPath>Dim Purpose Of Sale.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Locations.dim</Name>
+      <FullPath>Dim Locations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customers.dim</Name>
+      <FullPath>Dim Customers.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>PC Builder Company DM.ds</Name>
+      <FullPath>PC Builder Company DM.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>PC Builder Company DM.dsv</Name>
+      <FullPath>PC Builder Company DM.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>PC Builder Company DM</Id>
+            <Name>PC Builder Company DM</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-9OG452E\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=PC_Builder_Company_DM</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>PC Builder Company DM</Id>
+            <Name>PC Builder Company DM</Name>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>PC Builder Company DM</Id>
+            <Name>PC Builder Company DM</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
