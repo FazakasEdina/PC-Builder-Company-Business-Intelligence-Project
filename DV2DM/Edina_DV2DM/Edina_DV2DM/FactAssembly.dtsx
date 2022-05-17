@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{A012F3E8-A49C-4ABE-B7AE-69BAD4D54877}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{5E5B1057-A1B1-42C3-89DF-894E4B0561C6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1407,7 +1407,7 @@ where [refTable].[BK_Manifacturers] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Data Flow Task"
           TopLeft="90,71" />
       </GraphLayout>
@@ -1419,35 +1419,35 @@ where [refTable].[BK_Manifacturers] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="208,42"
-          Id="Package\Data Flow Task\Lookup for SK_Computers"
-          TopLeft="185,116" />
-        <NodeLayout
-          Size="141,42"
-          Id="Package\Data Flow Task\Regular load"
-          TopLeft="205,434" />
-        <NodeLayout
-          Size="403,42"
-          Id="Package\Data Flow Task\LinkAssembly LinkPurchase SatPurchase + Business keys Source"
-          TopLeft="86,43" />
-        <NodeLayout
-          Size="217,42"
+          Size="216.8,41.6"
           Id="Package\Data Flow Task\Lookup for SK_Components"
           TopLeft="173,194" />
         <NodeLayout
-          Size="225,42"
-          Id="Package\Data Flow Task\Lookup for SK_Manufacturers"
-          TopLeft="165,273" />
+          Size="140.8,41.6"
+          Id="Package\Data Flow Task\Regular load"
+          TopLeft="205,434" />
         <NodeLayout
-          Size="130,42"
+          Size="403.2,41.6"
+          Id="Package\Data Flow Task\LinkAssembly LinkPurchase SatPurchase + Business keys Source"
+          TopLeft="86,43" />
+        <NodeLayout
+          Size="129.6,41.6"
           Id="Package\Data Flow Task\Error table"
           TopLeft="515,438" />
         <NodeLayout
-          Size="125,42"
+          Size="224.8,41.6"
+          Id="Package\Data Flow Task\Lookup for SK_Manufacturers"
+          TopLeft="165,273" />
+        <NodeLayout
+          Size="124.8,41.6"
           Id="Package\Data Flow Task\Add rows"
           TopLeft="391,379" />
         <NodeLayout
-          Size="124,42"
+          Size="208,41.6"
+          Id="Package\Data Flow Task\Lookup for SK_Computers"
+          TopLeft="185,116" />
+        <NodeLayout
+          Size="124,41.6"
           Id="Package\Data Flow Task\Fast load"
           TopLeft="216,350" />
         <EdgeLayout
@@ -1636,37 +1636,6 @@ where [refTable].[BK_Manifacturers] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup for SK_Computers">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimComputers]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\LinkAssembly LinkPurchase SatPurchase + Business keys Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Lookup for SK_Components">
     <Properties>
       <Property>
@@ -1686,6 +1655,27 @@ where [refTable].[BK_Manifacturers] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\LinkAssembly LinkPurchase SatPurchase + Business keys Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Error table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -1713,15 +1703,25 @@ where [refTable].[BK_Manifacturers] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Error table">
+    design-time-name="Package\Data Flow Task\Lookup for SK_Computers">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimComputers]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
