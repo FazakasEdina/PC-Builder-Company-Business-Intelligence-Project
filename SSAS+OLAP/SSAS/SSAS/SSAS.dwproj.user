@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>DESKTOP-TPRH178\MSSQLSERVER2</TargetServer>
         <TargetDatabase>SSAS</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

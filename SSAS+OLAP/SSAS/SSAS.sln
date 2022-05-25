@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSAS", "SSAS\SSAS.dwproj", "{1D35836B-BD5C-4199-9B52-86E1DD288D68}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSAS(DESKTOP-TPRH178\MSSQLSERVER2)", "<Server=DESKTOP-TPRH178\MSSQLSERVER2;Database=SSAS;>", "{C16D31A1-C061-4DF5-AD09-15041972493B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -13,6 +15,7 @@ Global
 		{1D35836B-BD5C-4199-9B52-86E1DD288D68}.Development|Default.ActiveCfg = Development
 		{1D35836B-BD5C-4199-9B52-86E1DD288D68}.Development|Default.Build.0 = Development
 		{1D35836B-BD5C-4199-9B52-86E1DD288D68}.Development|Default.Deploy.0 = Development
+		{C16D31A1-C061-4DF5-AD09-15041972493B}.Development|Default.ActiveCfg = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

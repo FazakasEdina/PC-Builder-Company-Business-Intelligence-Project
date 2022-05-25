@@ -3,14 +3,20 @@
     <DataSources>
       <DataSource>
         <ID>PC Builder Company DM</ID>
-        <ConnectionString>Provider=SQLOLEDB.1;Data Source=DESKTOP-9OG452E\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=PC_Builder_Company_DM</ConnectionString>
+        <ConnectionString>Provider=SQLOLEDB.1;Data Source=DESKTOP-TPRH178\MSSQLSERVER2;Integrated Security=SSPI;Initial Catalog=PC_Builder_Company_DM</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
+      <Dimension>
+        <ID>Dim Date</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Computers</ID>
+      </Dimension>
       <Dimension>
         <ID>Dim Manufacturers</ID>
       </Dimension>
@@ -21,16 +27,10 @@
         <ID>Dim Purpose Of Sale</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Customers</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Date</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Computers</ID>
-      </Dimension>
-      <Dimension>
         <ID>Dim Locations</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Customers</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

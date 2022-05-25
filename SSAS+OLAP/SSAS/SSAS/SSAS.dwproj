@@ -68,7 +68,7 @@
           <ConfigurationSetting>
             <Id>PC Builder Company DM</Id>
             <Name>PC Builder Company DM</Name>
-            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-9OG452E\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=PC_Builder_Company_DM</Value>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-TPRH178\MSSQLSERVER2;Integrated Security=SSPI;Initial Catalog=PC_Builder_Company_DM</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
